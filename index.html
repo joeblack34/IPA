@@ -23,16 +23,18 @@
       box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
     }
 
-    header p{
+    header p {
       font-size: 20px;
     }
-ul{
-  margin-bottom: 40px;
-}
-ul li{
-  font-size: 18px;
-  margin-bottom: 10px;
-}
+
+    ul {
+      margin-bottom: 40px;
+    }
+
+    ul li {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
 
     main {
       margin-top: 40px;
@@ -51,9 +53,10 @@ ul li{
       margin-bottom: 20px;
     }
 
-    h3{
+    h3 {
       margin-bottom: 20px;
     }
+
     a {
       text-decoration: none;
       /* color: rgb(243, 241, 241); */
@@ -184,11 +187,18 @@ ul li{
       /* padding-right: 20px; */
     }
 
-    #Ticker{
+    #Ticker {
       margin: 30px 0 30px 0;
       font-size: 25px;
       height: 80px;
       color: lightgoldenrodyellow;
+    }
+
+    @media screen and (max-width: 780px) {
+      #Ticker {
+        height: 110px;
+        color: lightgoldenrodyellow;
+      }
     }
   </style>
 </head>
@@ -202,8 +212,11 @@ ul li{
         <div class="logo"><img src="logo.png" alt=""></div>
         <h1>Расширенный Бухгалтерский сервис от «Компании ИПА» </h1>
         <p id="Ticker"></p>
-        <p><a href="https://yandex.ru/maps?whatshere%5Bpoint%5D=44.808074%2C48.758849&whatshere%5Bzoom%5D=16.0&ll=44.80825600000003%2C48.75792699960542&z=16.0" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> 404132, Россия, Волгоградская обл., г. Волжский, проспект
-          Дружбы 107а, оф.9.</a></p>
+        <p><a
+            href="https://yandex.ru/maps?whatshere%5Bpoint%5D=44.808074%2C48.758849&whatshere%5Bzoom%5D=16.0&ll=44.80825600000003%2C48.75792699960542&z=16.0"
+            target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> 404132, Россия, Волгоградская обл., г.
+            Волжский, проспект
+            Дружбы 107а, оф.9.</a></p>
         <p><a href="tel:+7 (961) 062-97-79"><i class="fa fa-mobile" aria-hidden="true"></i>+7 (961) 062-97-79</a></p>
         <p><a href="mailto:ipa34@bk.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i> ipa34@bk.ru</a></p>
       </div>
@@ -289,8 +302,11 @@ ul li{
   <footer>
     <div class="container">
       <h3 class="pt-3">Контакты</h3>
-      <p><a href="https://yandex.ru/maps?whatshere%5Bpoint%5D=44.808074%2C48.758849&whatshere%5Bzoom%5D=16.0&ll=44.80825600000003%2C48.75792699960542&z=16.0" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> 404132, Россия, Волгоградская обл., г. Волжский, проспект
-        Дружбы 107а, оф.9.</a></p>
+      <p><a
+          href="https://yandex.ru/maps?whatshere%5Bpoint%5D=44.808074%2C48.758849&whatshere%5Bzoom%5D=16.0&ll=44.80825600000003%2C48.75792699960542&z=16.0"
+          target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> 404132, Россия, Волгоградская обл., г.
+          Волжский, проспект
+          Дружбы 107а, оф.9.</a></p>
       <p><a href="tel:+7 (961) 062-97-79"><i class="fa fa-mobile" aria-hidden="true"></i>+7 (961) 062-97-79</a></p>
       <p><a href="mailto:ipa34@bk.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i> ipa34@bk.ru</a></p>
 
@@ -306,22 +322,23 @@ ul li{
       })
     });
   </script>
-  Рекомендую: 
+  Рекомендую:
   <script type="text/javascript">
     var CharTimeout = 60; // скорость печатания
     var StoryTimeout = 3000; // время ожидания перед переключением
-  
+
     var Summaries = new Array();
-  
-      Summaries[0] = 'Готова ли Ваша организация или бизнес к вниманию контролирующих, надзирающих и правоохранительных органов?';
-      Summaries[1] = 'Готов ли бухгалтер, руководство и сотрудники к давлению с их стороны?';
-      Summaries[2] = 'Эти и многие другие вопросы лучше и дешевле задать заранее.';
-      Summaries[3] = 'Оптимальным ответом и решением будет наличие у Вас заключенного договора с нами,';
-      Summaries[4] = 'чтобы спокойно дальше вести дела, доверив общение с контролирующими органами,';
-      Summaries[5] = 'бухгалтерское сопровождение и весь документооборот «Компании ИПА».';
-      Summaries[6] = 'Наша организация имеет огромный опыт и штат профессиональных сотрудников,';
-      Summaries[7] = 'включая бухгалтеров-аудиторов и юристов,';
-      Summaries[8] = 'а так же возможность привлечь к решению вопросов квалифицированного адвоката.';
+
+    Summaries[0] =
+      'Готова ли Ваша организация или бизнес к вниманию контролирующих, надзирающих и правоохранительных органов?';
+    Summaries[1] = 'Готов ли бухгалтер, руководство и сотрудники к давлению с их стороны?';
+    Summaries[2] = 'Эти и многие другие вопросы лучше и дешевле задать заранее.';
+    Summaries[3] = 'Оптимальным ответом и решением будет наличие у Вас заключенного договора с нами,';
+    Summaries[4] = 'чтобы спокойно дальше вести дела, доверив общение с контролирующими органами,';
+    Summaries[5] = 'бухгалтерское сопровождение и весь документооборот «Компании ИПА».';
+    Summaries[6] = 'Наша организация имеет огромный опыт и штат профессиональных сотрудников,';
+    Summaries[7] = 'включая бухгалтеров-аудиторов и юристов,';
+    Summaries[8] = 'а так же возможность привлечь к решению вопросов квалифицированного адвоката.';
     /* Печатание текста - Тиккер
     ----------------------------------------------------------------
     var CharTimeout = 20;
@@ -331,29 +348,29 @@ ul li{
       Summaries[1] = "Spectrum - шикарная тема для WordPress на русском языке";
     startTicker();
     */
-  
-    function startTicker(){
-      massiveItemCount =  Number(Summaries.length); //количество элементов массива
+
+    function startTicker() {
+      massiveItemCount = Number(Summaries.length); //количество элементов массива
       // Определяем значения запуска
-      CurrentStory     = -1;
-      CurrentLength    = 0;
+      CurrentStory = -1;
+      CurrentLength = 0;
       // Расположение объекта
-      AnchorObject     = document.getElementById("Ticker");
-      runTheTicker();     
+      AnchorObject = document.getElementById("Ticker");
+      runTheTicker();
     }
     // Основной цикл тиккера
-    function runTheTicker(){
-      var myTimeout;  
+    function runTheTicker() {
+      var myTimeout;
       // Переход к следующему элементу
-      if(CurrentLength == 0){
+      if (CurrentLength == 0) {
         CurrentStory++;
-        CurrentStory      = CurrentStory % massiveItemCount;
-        StorySummary      = Summaries[CurrentStory].replace(/"/g,'-');      
+        CurrentStory = CurrentStory % massiveItemCount;
+        StorySummary = Summaries[CurrentStory].replace(/"/g, '-');
       }
       // Располагаем текущий текст в анкор с печатанием
-      AnchorObject.innerHTML = StorySummary.substring(0,CurrentLength) + znak();
+      AnchorObject.innerHTML = StorySummary.substring(0, CurrentLength) + znak();
       // Преобразуем длину для подстроки и определяем таймер
-      if(CurrentLength != StorySummary.length){
+      if (CurrentLength != StorySummary.length) {
         CurrentLength++;
         myTimeout = CharTimeout;
       } else {
@@ -364,11 +381,11 @@ ul li{
       setTimeout("runTheTicker()", myTimeout);
     }
     // Генератор подстановки знака
-    function znak(){
-      if(CurrentLength == StorySummary.length) return "";
+    function znak() {
+      if (CurrentLength == StorySummary.length) return "";
       else return "|";
     }
-  
+
     startTicker();
   </script>
 </body>
