@@ -183,6 +183,13 @@ ul li{
     footer i {
       /* padding-right: 20px; */
     }
+
+    #Ticker{
+      margin: 30px 0 30px 0;
+      font-size: 25px;
+      height: 80px;
+      color: lightgoldenrodyellow;
+    }
   </style>
 </head>
 
@@ -194,6 +201,7 @@ ul li{
         <!-- <h1>«Компания ИПА»</h1> -->
         <div class="logo"><img src="logo.png" alt=""></div>
         <h1>Расширенный Бухгалтерский сервис от «Компании ИПА» </h1>
+        <p id="Ticker"></p>
         <p><a href="https://yandex.ru/maps?whatshere%5Bpoint%5D=44.808074%2C48.758849&whatshere%5Bzoom%5D=16.0&ll=44.80825600000003%2C48.75792699960542&z=16.0" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> 404132, Россия, Волгоградская обл., г. Волжский, проспект
           Дружбы 107а, оф.9.</a></p>
         <p><a href="tel:+7 (961) 062-97-79"><i class="fa fa-mobile" aria-hidden="true"></i>+7 (961) 062-97-79</a></p>
@@ -297,6 +305,71 @@ ul li{
         block: "start"
       })
     });
+  </script>
+  Рекомендую: 
+  <script type="text/javascript">
+    var CharTimeout = 60; // скорость печатания
+    var StoryTimeout = 3000; // время ожидания перед переключением
+  
+    var Summaries = new Array();
+  
+      Summaries[0] = 'Готова ли Ваша организация или бизнес к вниманию контролирующих, надзирающих и правоохранительных органов?';
+      Summaries[1] = 'Готов ли бухгалтер, руководство и сотрудники к давлению с их стороны?';
+      Summaries[2] = 'Эти и многие другие вопросы лучше и дешевле задать заранее.';
+      Summaries[3] = 'Оптимальным ответом и решением будет наличие у Вас заключенного договора с нами,';
+      Summaries[4] = 'чтобы спокойно дальше вести дела, доверив общение с контролирующими органами,';
+      Summaries[5] = 'бухгалтерское сопровождение и весь документооборот «Компании ИПА».';
+      Summaries[6] = 'Наша организация имеет огромный опыт и штат профессиональных сотрудников,';
+      Summaries[7] = 'включая бухгалтеров-аудиторов и юристов,';
+      Summaries[8] = 'а так же возможность привлечь к решению вопросов квалифицированного адвоката.';
+    /* Печатание текста - Тиккер
+    ----------------------------------------------------------------
+    var CharTimeout = 20;
+    var StoryTimeout = 7000;
+    var Summaries = new Array();
+      Summaries[0] = "CMS для простых сайтов GetSimple на русском языке";
+      Summaries[1] = "Spectrum - шикарная тема для WordPress на русском языке";
+    startTicker();
+    */
+  
+    function startTicker(){
+      massiveItemCount =  Number(Summaries.length); //количество элементов массива
+      // Определяем значения запуска
+      CurrentStory     = -1;
+      CurrentLength    = 0;
+      // Расположение объекта
+      AnchorObject     = document.getElementById("Ticker");
+      runTheTicker();     
+    }
+    // Основной цикл тиккера
+    function runTheTicker(){
+      var myTimeout;  
+      // Переход к следующему элементу
+      if(CurrentLength == 0){
+        CurrentStory++;
+        CurrentStory      = CurrentStory % massiveItemCount;
+        StorySummary      = Summaries[CurrentStory].replace(/"/g,'-');      
+      }
+      // Располагаем текущий текст в анкор с печатанием
+      AnchorObject.innerHTML = StorySummary.substring(0,CurrentLength) + znak();
+      // Преобразуем длину для подстроки и определяем таймер
+      if(CurrentLength != StorySummary.length){
+        CurrentLength++;
+        myTimeout = CharTimeout;
+      } else {
+        CurrentLength = 0;
+        myTimeout = StoryTimeout;
+      }
+      // Повторяем цикл с учетом задержки
+      setTimeout("runTheTicker()", myTimeout);
+    }
+    // Генератор подстановки знака
+    function znak(){
+      if(CurrentLength == StorySummary.length) return "";
+      else return "|";
+    }
+  
+    startTicker();
   </script>
 </body>
 
