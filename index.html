@@ -31,9 +31,12 @@
       margin-bottom: 40px;
     }
 
-    ul li {
+    section ul li {
+      padding-top:6px;
+      padding-bottom:6px;
       font-size: 18px;
       margin-bottom: 10px;
+      
     }
 
     main {
@@ -63,7 +66,7 @@
       color: #fff;
     }
 
-    
+
 
     a:hover {
       text-decoration: none;
@@ -209,8 +212,7 @@
         height: 100px;
       }
 
-      .contacts {
-      }
+      .contacts {}
 
       .wrap {
         margin: 30px auto 0;
@@ -220,13 +222,37 @@
         /* display: none; */
       }
 
-      footer{
+      footer {
         text-align: center;
       }
 
-      footer h3{
+      footer h3 {
         margin-bottom: 10px;
       }
+
+      section ul{
+        padding-inline-start: 36px;
+      }
+      section ul li{
+        padding: 0;
+      }
+    }
+
+    #services ul{
+      padding: 0;
+      list-style: none;
+    }
+
+    #services ul li {
+      padding: 6px;
+    }
+
+    #services ul li:before {
+      color: rgb(202, 39, 39);
+      padding-right: 10px;
+      font-weight: bold;
+      content: "\2714";
+      transition-duration: 0.5s;
     }
   </style>
 </head>
@@ -252,7 +278,7 @@
       </div>
     </div>
     <div class="wrapper">
-      <a class="arr" href="#service">
+      <a class="arr" href="#services">
         <div class="arrow">
           <ul>
             <li></li>
@@ -279,7 +305,7 @@
       <!-- <h2 id="service">Возможна единовременная помощь в сложных ситуациях. <br>
         Неразрешимых вопросов не бывает!!!
       </h2> -->
-      <section id="service">
+      <section id="services">
         <h3>«Компания ИПА» предоставляет следующие виды услуг:</h3>
         <ul>
           <li>Выписка первичной документации;</li>
@@ -346,7 +372,7 @@
   <script>
     document.querySelector('.arr').addEventListener('click', function (e) {
       e.preventDefault()
-      document.querySelector("#service").scrollIntoView({
+      document.querySelector("#services").scrollIntoView({
         behavior: "smooth",
         block: "start"
       })
