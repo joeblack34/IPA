@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <style>
+    body{
+      background-color: #333;
+    }
     header {
       display: flex;
       height: 100vh;
@@ -38,7 +41,8 @@
     }
 
     main {
-      margin-top: 40px;
+      padding-top: 40px;
+      background-color: #fff;
     }
 
     .wrap {
@@ -178,7 +182,7 @@
 
     footer {
       color: #fff;
-      background: linear-gradient(#494949,  #5a5a5a, #5a5a5a, #333);
+      background: linear-gradient(#494949, #5a5a5a, #5a5a5a, #333);
     }
 
     footer p {
@@ -204,14 +208,21 @@
       height: 80px;
       color: lightgoldenrodyellow;
     }
-    .contacts p{
-        font-size: 18px;
-      }
 
-      .contacts a{
-        color: #fff;
-        font-size: 20px;
-      }
+    .contacts p {
+      font-size: 18px;
+    }
+
+    .contacts p:last-child {
+      padding: 20px 0 50px 0;
+      margin-bottom: 0;
+    }
+
+    .contacts a {
+      color: #fff;
+      font-size: 25px;
+    }
+
     @media screen and (max-width: 780px) {
       #Ticker {
         margin: 10px 0 30px 0;
@@ -220,7 +231,7 @@
         height: 100px;
       }
 
-      .contacts p{
+      .contacts p {
         font-size: 18px;
       }
 
@@ -279,9 +290,11 @@
         <div>
           <p><a
               href="https://yandex.ru/maps?whatshere%5Bpoint%5D=44.808074%2C48.758849&whatshere%5Bzoom%5D=16.0&ll=44.80825600000003%2C48.75792699960542&z=16.0"
-              target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> 404132, Россия, Волгоградская обл., г.Волжский, проспект Дружбы 107а</a></p>
+              target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> 404132, Россия, Волгоградская обл.,
+              г.Волжский, проспект Дружбы 107а</a></p>
           <p><a href="tel:+7 (961) 062-97-79"><i class="fa fa-mobile" aria-hidden="true"></i>+7 (961) 062-97-79</a></p>
-          <p><a href="mailto:ipacompany@mail.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i> ipacompany@mail.ru</a></p>
+          <p><a href="mailto:ipacompany@mail.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+              ipacompany@mail.ru</a></p>
         </div>
       </div>
     </div>
@@ -296,9 +309,9 @@
       </a>
     </div>
   </header>
-
+  <main>
   <div class="container">
-    <main>
+    
       <section id="services">
         <h3><strong>«Компания ИПА»</strong> предоставляет следующие виды услуг:</h3>
         <ul>
@@ -342,20 +355,26 @@
           <li>Юридическая неподготовленность.</li>
         </ul>
       </section>
-    </main>
+
+      <section class="text-center contacts">
+        <p>
+          <h3 class="container">Стоимость услуг Вы можете уточнить по телефону:</h3>
+        </p>
+        <p><a class="btn btn-danger" href="tel:+7 (961) 062-97-79">8 (961) 062-97-79</a></p>
+      </section>
+    
   </div>
-  <section class="text-center contacts">
-    <p ><h3 class="container">Стоимость услуг Вы можете уточнить по телефону:</h3> </p>
-    <p><a class="btn btn-danger" href="tel:+7 (961) 062-97-79">8 (961) 062-97-79</a></p> 
-  </section>
+</main>
   <footer>
     <div class="container">
       <h3 class="pt-3">Контакты</h3>
       <p><a
           href="https://yandex.ru/maps?whatshere%5Bpoint%5D=44.808074%2C48.758849&whatshere%5Bzoom%5D=16.0&ll=44.80825600000003%2C48.75792699960542&z=16.0"
-          target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> 404132, Россия, Волгоградская обл., г.Волжский, проспект Дружбы 107а</a></p>
+          target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> 404132, Россия, Волгоградская обл.,
+          г.Волжский, проспект Дружбы 107а</a></p>
       <p><a href="tel:+7 (961) 062-97-79"><i class="fa fa-mobile" aria-hidden="true"></i>+7 (961) 062-97-79</a></p>
-      <p><a href="mailto:ipacompany@mail.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i> ipacompany@mail.ru</a></p>
+      <p><a href="mailto:ipacompany@mail.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i> ipacompany@mail.ru</a>
+      </p>
 
     </div>
   </footer>
